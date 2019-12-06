@@ -1,5 +1,5 @@
 {
-  "name": "@baidu/neat-cli-print",
+  "name": "neat-cli-print",
   "version": "0.1.0",
   "description": "Neat print for CLI",
   "author": "ice-zjchen <ice-zjchen@qq.com>",
@@ -11,7 +11,7 @@
     "types"
   ],
   "publishConfig": {
-    "registry": "http://registry.npm.taobao.org"
+    "registry": "http://registry.npmjs.org"
   },
   "repository": {
     "type": "git",
