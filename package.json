@@ -1,0 +1,47 @@
+{
+  "name": "@baidu/neat-cli-print",
+  "version": "0.1.0",
+  "description": "Neat print for CLI",
+  "author": "ice-zjchen <ice-zjchen@qq.com>",
+  "homepage": "",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "types"
+  ],
+  "publishConfig": {
+    "registry": "http://registry.npm.taobao.org"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ice-zjchen/neat-cli-print.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "build": "sh ./scripts/build.sh",
+    "lint": "eslint src/*"
+  },
+  "hooks": {
+    "pre-commit": "yarn run lint"
+  },
+  "lint-staged": {
+    "*.{.ts,.tsx}": [
+      "eslint",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "chalk": "^3.0.0"
+  },
+  "devDependencies": {
+    "@ecomfe/eslint-config": "^2.1.1",
+    "@typescript-eslint/eslint-plugin": "^2.10.0",
+    "@typescript-eslint/parser": "^2.10.0",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.7.2",
+    "eslint-plugin-babel": "^5.3.0",
+    "husky": "^3.1.0",
+    "typescript": "^3.7.3"
+  }
+}

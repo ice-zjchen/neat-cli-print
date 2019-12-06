@@ -1,0 +1,30 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "noEmit": false,
+        "target": "es2018",
+        "outDir": "dist",
+        "allowJs": false,
+        "esModuleInterop": true,
+        "experimentalDecorators": true,
+        "lib": [
+            "es2018",
+            "dom"
+        ],
+        "sourceMap": true,
+        "moduleResolution": "node",
+        "strict": true,
+        "noUnusedLocals": false,
+        "noFallthroughCasesInSwitch": true,
+        "baseUrl": "./",
+        "rootDir": "src",
+        "typeRoots": [
+            "./types",
+            "node_modules/@types"
+        ]
+    },
+    "exclude": [
+        "node_modules",
+        "packages/*/dist"
+    ]
+}
