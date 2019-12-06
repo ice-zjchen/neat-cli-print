@@ -20,7 +20,8 @@
   "scripts": {
     "commit": "npx git-cz",
     "build": "sh ./scripts/build.sh",
-    "lint": "eslint src/*"
+    "lint": "eslint src/*",
+    "prepublishOnly": "yarn run build"
   },
   "hooks": {
     "pre-commit": "yarn run lint"
